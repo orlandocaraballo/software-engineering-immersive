@@ -1,5 +1,12 @@
 import React from "react";
+import Nav from "./Nav/index.jsx";
+import Main from "./Main/index.jsx";
 
 export default function App() {
-  return <>Welcome to my app</>;
+  return (
+    <>
+      <Nav />
+      <Main />
+    </>
+  );
 }
