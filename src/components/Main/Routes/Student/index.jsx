@@ -1,14 +1,13 @@
 import React from "react";
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import { useTitle } from "../../../../context/Title.jsx";
 import axios from "axios";
 import "./style.css";
 
-export default function Student({
-  match: {
-    params: { id },
-  },
-}) {
+export default function Student(props) {
+  const { id } = props.match.params;
+  const { setTitle } = useTitle();
   const [student, setStudent] = useState([]);
 
   useEffect(() => {
@@ -26,6 +25,7 @@ export default function Student({
     }
 
     loadStudent();
+    setTitle("Student");
   }, []);
 
   const { name, slackHandle, github, cohort, knownFor, gender } = student;

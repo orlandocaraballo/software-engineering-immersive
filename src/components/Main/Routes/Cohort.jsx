@@ -2,12 +2,11 @@ import React from "react";
 import { useState, useEffect } from "react";
 import axios from "axios";
 import { Link } from "react-router-dom";
+import { useTitle } from "../../../context/Title.jsx";
 
-export default function Cohort({
-  match: {
-    params: { name },
-  },
-}) {
+export default function Cohort(props) {
+  const { name } = props.match.params;
+  const { setTitle } = useTitle();
   const [students, setStudents] = useState([]);
 
   useEffect(() => {
@@ -25,6 +24,7 @@ export default function Cohort({
     }
 
     loadCohortStudents();
+    setTitle("Cohort");
   }, []);
 
   return (
