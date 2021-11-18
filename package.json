@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "start-server": "webpack-dev-server --open",
     "build-watch": "webpack -w",

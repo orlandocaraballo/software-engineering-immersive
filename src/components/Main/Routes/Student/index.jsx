@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { useTitle } from "../../../../context/Title.jsx";
 import axios from "axios";
-import "./style.css";
+import "./style.scss";
 
 export default function Student(props) {
   const { id } = props.match.params;
@@ -30,7 +30,7 @@ export default function Student(props) {
   const { name, slackHandle, github, cohort, knownFor, gender } = student;
 
   return (
-    <div>
+    <div id="student">
       <h2>{name}</h2>
       <dl>
         <dt>Slack:</dt>
