@@ -16,7 +16,6 @@ export default function Student(props) {
         const { data } = await axios.get(
           `http://localhost:3000/api/students/${id}`
         );
-        console.log(data);
 
         setStudent(data);
       } catch (err) {
@@ -57,6 +56,7 @@ export default function Student(props) {
           <Link to={`/cohorts/${cohort}`}>{cohort}</Link>
         </dd>
       </dl>
+      <Link to={`/students/${id}/edit`}>Edit</Link>
     </div>
   );
 }

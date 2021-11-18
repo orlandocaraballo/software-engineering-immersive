@@ -12,7 +12,6 @@ export default function Cohorts() {
     async function loadCohorts() {
       try {
         const { data } = await axios.get("http://localhost:3000/api/cohorts");
-        console.log(data);
 
         setCohorts(data);
       } catch (err) {

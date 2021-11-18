@@ -7,7 +7,7 @@ export function useTitle() {
 }
 
 export function TitleProvider({ children }) {
-  const [title, setTitle] = useState("Page title");
+  const [title, setTitle] = useState("");
 
   return (
     <TitleContext.Provider value={{ title, setTitle }}>

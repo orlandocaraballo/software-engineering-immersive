@@ -49,16 +49,18 @@ export default function Students() {
     // below we loop thru all the cohort keys and for every cohort
     //  we loop thru all the students that correspond to that cohort
     <div id="cohorts">
-      {Object.entries(studentsGroupedByCohort).map(([cohort, students]) => (
-        <ul>
-          <h3>{cohort}</h3>
-          {students.map(({ _id, name }) => (
-            <li key={_id}>
-              <Link to={`/students/${_id}`}>{name}</Link>
-            </li>
-          ))}
-        </ul>
-      ))}
+      {Object.entries(studentsGroupedByCohort).map(
+        ([cohort, students], index) => (
+          <ul key={index}>
+            <h3>{cohort}</h3>
+            {students.map(({ _id, name }) => (
+              <li key={_id}>
+                <Link to={`/students/${_id}`}>{name}</Link>
+              </li>
+            ))}
+          </ul>
+        )
+      )}
     </div>
   );
 }

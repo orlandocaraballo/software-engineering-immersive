@@ -15,7 +15,6 @@ export default function Cohort(props) {
         const { data } = await axios.get(
           `http://localhost:3000/api/cohorts/${name}/students`
         );
-        console.log(data);
 
         setStudents(data);
       } catch (err) {
