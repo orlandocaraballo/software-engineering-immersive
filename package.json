@@ -5,7 +5,8 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "start-server": "webpack-dev-server --open",
+    "start-frontend-server": "webpack-dev-server --open",
+    "start-backend-server": "nodemon server/index.js",
     "build-watch": "webpack -w",
     "build": "webpack"
   },
@@ -14,9 +15,15 @@
   "dependencies": {
     "axios": "^0.24.0",
     "babel-polyfill": "^6.26.0",
+    "chalk": "^2.4.2",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "lodash": "^4.17.21",
+    "mongodb": "^4.2.0",
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
-    "react-router-dom": "^5.3.0"
+    "react-router-dom": "^5.3.0",
+    "volleyball": "^1.5.1"
   },
   "devDependencies": {
     "@babel/preset-react": "^7.16.0",
@@ -25,6 +32,7 @@
     "css-loader": "^6.5.1",
     "html-webpack-plugin": "^5.5.0",
     "inject-body-webpack-plugin": "^1.3.0",
+    "nodemon": "^2.0.15",
     "sass": "^1.43.4",
     "sass-loader": "^12.3.0",
     "style-loader": "^3.3.1",

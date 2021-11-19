@@ -8,7 +8,7 @@ const InjectBodyPlugin = require("inject-body-webpack-plugin").default;
 module.exports = {
   mode: "development",
   entry: {
-    index: ["babel-polyfill", "./src/index.js"],
+    index: ["babel-polyfill", "./client/index.js"],
   },
   output: {
     path: path.resolve(__dirname, "public"),
@@ -40,5 +40,8 @@ module.exports = {
   devServer: {
     static: path.join(__dirname, "public"),
     historyApiFallback: true,
+    proxy: {
+      "/api": "http://localhost:3000",
+    },
   },
 };

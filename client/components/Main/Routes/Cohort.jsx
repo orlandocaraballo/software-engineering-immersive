@@ -12,9 +12,7 @@ export default function Cohort(props) {
   useEffect(() => {
     async function loadCohortStudents() {
       try {
-        const { data } = await axios.get(
-          `http://localhost:3000/api/cohorts/${name}/students`
-        );
+        const { data } = await axios.get(`/api/cohorts/${name}/students`);
 
         setStudents(data);
       } catch (err) {
@@ -26,7 +24,9 @@ export default function Cohort(props) {
     setTitle("Cohort");
   }, []);
 
-  return (
+  return students.length === 0 ? (
+    "No students for this cohort"
+  ) : (
     <ul>
       {students.map(({ name, _id }) => (
         <li key={_id}>

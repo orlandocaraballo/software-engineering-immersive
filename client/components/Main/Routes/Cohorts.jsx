@@ -11,7 +11,7 @@ export default function Cohorts() {
   useEffect(() => {
     async function loadCohorts() {
       try {
-        const { data } = await axios.get("http://localhost:3000/api/cohorts");
+        const { data } = await axios.get("/api/cohorts");
 
         setCohorts(data);
       } catch (err) {
@@ -23,7 +23,9 @@ export default function Cohorts() {
     setTitle("Cohorts");
   }, []);
 
-  return (
+  return cohorts.length === 0 ? (
+    "No cohorts found"
+  ) : (
     <ul>
       {cohorts.map((name, index) => (
         <li key={index}>

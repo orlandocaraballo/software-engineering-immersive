@@ -1,0 +1,481 @@
+[{
+  "_id": {
+    "$oid": "61941ef5300f61c9fad8e37b"
+  },
+  "name": "yorvin",
+  "gender": "male",
+  "github": "https://github.com/Yorvi",
+  "cohort": "edge-case",
+  "knownFor": "handing out memes",
+  "slackHandle": "@yorvi"
+},{
+  "_id": {
+    "$oid": "61941ef5300f61c9fad8e37c"
+  },
+  "name": "rachel",
+  "gender": "female",
+  "github": "https://github.com/rbressner",
+  "cohort": "edge-case",
+  "knownFor": "being confused",
+  "slackHandle": "@Rachel B"
+},{
+  "_id": {
+    "$oid": "61941ef5300f61c9fad8e37d"
+  },
+  "name": "michael s",
+  "gender": "male",
+  "github": "https://github.com/msalvatore22",
+  "cohort": "edge-case",
+  "knownFor": "saying random stuff",
+  "slackHandle": "@Michael Salvatore"
+},{
+  "_id": {
+    "$oid": "61941ef5300f61c9fad8e37e"
+  },
+  "name": "michael m",
+  "gender": "male",
+  "github": "https://github.com/maiki-mo",
+  "cohort": "edge-case",
+  "knownFor": "his alienware laptop",
+  "slackHandle": "@Mike"
+},{
+  "_id": {
+    "$oid": "61941ef5300f61c9fad8e37f"
+  },
+  "name": "scott",
+  "gender": "male",
+  "github": "https://github.com/scottsutrisno",
+  "cohort": "edge-case",
+  "knownFor": "looking he's always sleepy",
+  "slackHandle": "@King Scottie"
+},{
+  "_id": {
+    "$oid": "61941ef5300f61c9fad8e380"
+  },
+  "name": "jonathan",
+  "gender": "male",
+  "github": "https://github.com/jmiles90",
+  "cohort": "edge-case",
+  "knownFor": "jokes",
+  "slackHandle": "@console.log"
+},{
+  "_id": {
+    "$oid": "61941ef5300f61c9fad8e381"
+  },
+  "name": "mada",
+  "gender": "female",
+  "github": "https://github.com/thefifthdentist",
+  "cohort": "edge-case",
+  "knownFor": "saying a lot of things in a short amount of time",
+  "slackHandle": "@thefifthdentist"
+},{
+  "_id": {
+    "$oid": "61941ef5300f61c9fad8e382"
+  },
+  "name": "cat",
+  "gender": "female",
+  "github": "https://github.com/CatPerry",
+  "cohort": "edge-case",
+  "knownFor": "making an edgy bakery",
+  "slackHandle": "@Cat Perry"
+},{
+  "_id": {
+    "$oid": "61941ef5300f61c9fad8e383"
+  },
+  "name": "omar",
+  "gender": "male",
+  "github": "https://github.com/omarahmed30",
+  "cohort": "edge-case",
+  "knownFor": "extreme gaming",
+  "slackHandle": "@Omar"
+},{
+  "_id": {
+    "$oid": "61941ef5300f61c9fad8e384"
+  },
+  "name": "rashid",
+  "gender": "male",
+  "github": "https://github.com/rashidarmand",
+  "cohort": "edge-case",
+  "knownFor": "doing things recursively",
+  "slackHandle": "@90"
+},{
+  "_id": {
+    "$oid": "61941ef5300f61c9fad8e385"
+  },
+  "name": "md",
+  "gender": "male",
+  "github": "https://github.com/adnanulchowdhury",
+  "cohort": "edge-case",
+  "knownFor": "speaking about science",
+  "slackHandle": "@adnanchow"
+},{
+  "_id": {
+    "$oid": "61941ef5300f61c9fad8e386"
+  },
+  "name": "lauren",
+  "gender": "female",
+  "github": "https://github.com/lmtracy",
+  "cohort": "edge-case",
+  "knownFor": "loving gingers",
+  "slackHandle": "@Lauren"
+},{
+  "_id": {
+    "$oid": "61941ef5300f61c9fad8e387"
+  },
+  "name": "aaron",
+  "gender": "male",
+  "github": "https://github.com/aaronmasih92",
+  "cohort": "edge-case",
+  "knownFor": "speaking on html5",
+  "slackHandle": "@aaron"
+},{
+  "_id": {
+    "$oid": "61941ef5300f61c9fad8e388"
+  },
+  "name": "stephen",
+  "gender": "male",
+  "github": "https://github.com/Stephen-NYC",
+  "cohort": "edge-case",
+  "knownFor": "guy fieri",
+  "slackHandle": "@Stephen"
+},{
+  "_id": {
+    "$oid": "61941ef5300f61c9fad8e389"
+  },
+  "name": "maz",
+  "gender": "male",
+  "github": "https://github.com/complexlogik",
+  "cohort": "edge-case",
+  "knownFor": "the anti-hero",
+  "slackHandle": "@complexlogik"
+},{
+  "_id": {
+    "$oid": "61941ef5300f61c9fad8e38a"
+  },
+  "name": "hardik",
+  "gender": "male",
+  "github": "https://github.com/Triplepoint0",
+  "cohort": "edge-case",
+  "knownFor": "stealing large credit cards",
+  "slackHandle": "@Hardik Shah"
+},{
+  "_id": {
+    "$oid": "61941ef5300f61c9fad8e38b"
+  },
+  "name": "mariia",
+  "gender": "female",
+  "github": "https://github.com/Maria108",
+  "cohort": "edge-case",
+  "knownFor": "cake",
+  "slackHandle": "@Mariia Abashina"
+},{
+  "_id": {
+    "$oid": "61941ef5300f61c9fad8e38c"
+  },
+  "name": "chris",
+  "gender": "male",
+  "github": "https://github.com/ckedd",
+  "cohort": "edge-case",
+  "knownFor": "jurrasic park",
+  "slackHandle": "@ChrisKeddell"
+},{
+  "_id": {
+    "$oid": "61941ef5300f61c9fad8e38d"
+  },
+  "name": "kevin",
+  "gender": "male",
+  "github": "https://github.com/kevinhesse",
+  "cohort": "edge-case",
+  "knownFor": "being chill",
+  "slackHandle": "@Kevin Hesse"
+},{
+  "_id": {
+    "$oid": "61941ef5300f61c9fad8e38e"
+  },
+  "name": "martin",
+  "gender": "male",
+  "github": "https://github.com/mr-martinsosa",
+  "cohort": "edge-case",
+  "knownFor": "pokemons",
+  "slackHandle": "@.martin"
+},{
+  "_id": {
+    "$oid": "61941ef5300f61c9fad8e38f"
+  },
+  "name": "tony",
+  "gender": "male",
+  "github": "https://github.com/tonymacas",
+  "cohort": "edge-case",
+  "knownFor": "being better than all of us",
+  "slackHandle": "@Tony Macas"
+},{
+  "_id": {
+    "$oid": "61941ef5300f61c9fad8e390"
+  },
+  "name": "minhal",
+  "gender": "male",
+  "github": "https://github.com/mag166",
+  "cohort": "edge-case",
+  "knownFor": "his kingship",
+  "slackHandle": "@Minhal Gardezi"
+},{
+  "_id": {
+    "$oid": "61941ef5300f61c9fad8e391"
+  },
+  "name": "kay",
+  "gender": "female",
+  "github": "https://github.com/mokaymokay",
+  "cohort": "edge-case",
+  "knownFor": "being the most edge case",
+  "slackHandle": "@kay"
+},{
+  "_id": {
+    "$oid": "61942084f1c19bba06eee461"
+  },
+  "name": "ryan",
+  "gender": "male",
+  "github": "https://github.com/ryanrustler",
+  "cohort": "final-form",
+  "knownFor": "being completely non-specific about anything",
+  "slackHandle": "@Ryan Robinson"
+},{
+  "_id": {
+    "$oid": "61942084f1c19bba06eee462"
+  },
+  "name": "bryan",
+  "gender": "male",
+  "github": "https://github.com/bryanjeanty",
+  "cohort": "final-form",
+  "knownFor": "being confused with ryan",
+  "slackHandle": "@Bryan Jeanty"
+},{
+  "_id": {
+    "$oid": "61942084f1c19bba06eee463"
+  },
+  "name": "roig",
+  "gender": "male",
+  "github": "https://github.com/RoigRosa201",
+  "cohort": "final-form",
+  "knownFor": "smiling a lot",
+  "slackHandle": "@Roig Rosa"
+},{
+  "_id": {
+    "$oid": "61942084f1c19bba06eee464"
+  },
+  "name": "syed",
+  "gender": "male",
+  "github": "https://github.com/sfahim",
+  "cohort": "final-form",
+  "knownFor": "being the best dressed, yes even better than zak and mohamed",
+  "slackHandle": "@Syed Fahim"
+},{
+  "_id": {
+    "$oid": "61942084f1c19bba06eee465"
+  },
+  "name": "mohamed",
+  "gender": "male",
+  "github": "https://github.com/ouryj",
+  "cohort": "final-form",
+  "knownFor": "having a confused look on his face",
+  "slackHandle": "@oury j"
+},{
+  "_id": {
+    "$oid": "61942084f1c19bba06eee466"
+  },
+  "name": "fausto",
+  "gender": "male",
+  "github": "https://github.com/FaustoRosado",
+  "cohort": "final-form",
+  "knownFor": "saving lives",
+  "slackHandle": "@Fausto Rosado"
+},{
+  "_id": {
+    "$oid": "61942084f1c19bba06eee467"
+  },
+  "name": "bola",
+  "gender": "male",
+  "github": "https://github.com/bolamuyis",
+  "cohort": "final-form",
+  "knownFor": "being afraid of his computer",
+  "slackHandle": "@Bola"
+},{
+  "_id": {
+    "$oid": "61942084f1c19bba06eee468"
+  },
+  "name": "janelle",
+  "gender": "female",
+  "github": "https://github.com/JanelleEricksonGoettl",
+  "cohort": "final-form",
+  "knownFor": "reading 1000 books on the topic of linguistics",
+  "slackHandle": "@Janelle Erickson-Goettl"
+},{
+  "_id": {
+    "$oid": "61942084f1c19bba06eee469"
+  },
+  "name": "warren",
+  "gender": "male",
+  "github": "https://github.com/probboy",
+  "cohort": "final-form",
+  "knownFor": "entering 25 different passwords to login to his computer",
+  "slackHandle": "@Warren"
+},{
+  "_id": {
+    "$oid": "61942084f1c19bba06eee46a"
+  },
+  "name": "aron",
+  "gender": "male",
+  "github": "https://github.com/AronWinston",
+  "cohort": "final-form",
+  "knownFor": "being dink",
+  "slackHandle": "@Aron Winston"
+},{
+  "_id": {
+    "$oid": "61942084f1c19bba06eee46b"
+  },
+  "name": "berk",
+  "gender": "male",
+  "github": "https://github.com/cnacir",
+  "cohort": "final-form",
+  "knownFor": "having a computer that can game at 4k",
+  "slackHandle": "@Berk"
+},{
+  "_id": {
+    "$oid": "61942084f1c19bba06eee46c"
+  },
+  "name": "johnny",
+  "gender": "male",
+  "github": "https://github.com/johnnyk1m",
+  "cohort": "final-form",
+  "knownFor": "camping in 5 degree weather",
+  "slackHandle": "@Johnny.K"
+},{
+  "_id": {
+    "$oid": "61942084f1c19bba06eee46d"
+  },
+  "name": "wonjun",
+  "gender": "male",
+  "github": "https://github.com/wonjune12",
+  "cohort": "final-form",
+  "knownFor": "wearing shorts in 5 degree weather",
+  "slackHandle": "@Wonjun Choi"
+},{
+  "_id": {
+    "$oid": "61942107f1c19bba06eee470"
+  },
+  "name": "anna",
+  "gender": "female",
+  "github": "https://github.com/tribbyfam",
+  "cohort": "methods",
+  "knownFor": "being a data master",
+  "slackHandle": "@Anna"
+},{
+  "_id": {
+    "$oid": "61942107f1c19bba06eee471"
+  },
+  "name": "kevin",
+  "gender": "male",
+  "github": "https://github.com/kevinwong247",
+  "cohort": "methods",
+  "knownFor": "sabotaging his hdmi port",
+  "slackHandle": "@Kevin Wong"
+},{
+  "_id": {
+    "$oid": "61942107f1c19bba06eee472"
+  },
+  "name": "pablo",
+  "gender": "male",
+  "github": "https://github.com/PabloDeLaCruz1",
+  "cohort": "methods",
+  "knownFor": "being two days ahead",
+  "slackHandle": "@Pablo De La Cruz"
+},{
+  "_id": {
+    "$oid": "61942107f1c19bba06eee473"
+  },
+  "name": "janice",
+  "gender": "female",
+  "github": "https://github.com/Janice-Hughes",
+  "cohort": "methods",
+  "knownFor": "raising her hand",
+  "slackHandle": "@Janice Hughes"
+},{
+  "_id": {
+    "$oid": "61942107f1c19bba06eee474"
+  },
+  "name": "garth",
+  "gender": "male",
+  "github": "https://github.com/BlackPanther74",
+  "cohort": "methods",
+  "knownFor": "breaking it down",
+  "slackHandle": "@Garth Puckerin"
+},{
+  "_id": {
+    "$oid": "61942107f1c19bba06eee475"
+  },
+  "name": "richard",
+  "gender": "male",
+  "github": "https://github.com/spoccomp",
+  "cohort": "methods",
+  "knownFor": "understanding groot language",
+  "slackHandle": "@Richard Trapanese"
+},{
+  "_id": {
+    "$oid": "61942107f1c19bba06eee476"
+  },
+  "name": "reynaldo",
+  "gender": "male",
+  "github": "https://github.com/panaminer08",
+  "cohort": "methods",
+  "knownFor": "speaking groot language",
+  "slackHandle": "@Rey  "
+},{
+  "_id": {
+    "$oid": "61942107f1c19bba06eee477"
+  },
+  "name": "diana",
+  "gender": "female",
+  "github": "https://github.com/DianaCanCode",
+  "cohort": "methods",
+  "knownFor": "paying attention in class",
+  "slackHandle": "@Diana"
+},{
+  "_id": {
+    "$oid": "61942107f1c19bba06eee478"
+  },
+  "name": "zaheen",
+  "gender": "male",
+  "github": "https://github.com/ZAhmed95",
+  "cohort": "methods",
+  "knownFor": "using trigonometry",
+  "slackHandle": "@Zaheen Ahmed"
+},{
+  "_id": {
+    "$oid": "61942107f1c19bba06eee479"
+  },
+  "name": "franklin",
+  "gender": "male",
+  "github": "https://github.com/fbado66",
+  "cohort": "methods",
+  "knownFor": "sleeping a lot",
+  "slackHandle": "@Fbado66"
+},{
+  "_id": {
+    "$oid": "61942107f1c19bba06eee47a"
+  },
+  "name": "marlon",
+  "gender": "male",
+  "github": "https://github.com/mrdbrg",
+  "cohort": "methods",
+  "knownFor": "having two names",
+  "slackHandle": "@Marlon"
+},{
+  "_id": {
+    "$oid": "61942107f1c19bba06eee47b"
+  },
+  "name": "zach",
+  "gender": "male",
+  "github": "https://github.com/Zrondos",
+  "cohort": "methods",
+  "knownFor": "being a pokemon master",
+  "slackHandle": "@Zach"
+}]
