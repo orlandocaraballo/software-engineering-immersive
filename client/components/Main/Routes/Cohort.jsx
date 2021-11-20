@@ -33,9 +33,9 @@ export default function Cohort(props) {
     "No students for this cohort"
   ) : (
     <ul>
-      {students.map(({ name, _id }) => (
-        <li key={_id}>
-          <Link to={`/students/${_id}`}>{name}</Link>
+      {students.map(({ name, _id: id }) => (
+        <li key={id}>
+          <Link to={`/students/${id}`}>{name}</Link>
         </li>
       ))}
     </ul>
