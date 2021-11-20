@@ -4,7 +4,8 @@ import volleyball from "volleyball";
 import chalk from "chalk";
 import cors from "cors";
 
-const PORT = process.env.NODE_ENV === "production" ? process.env.PORT : 3000;
+const { NODE_ENV, PORT: ENV_PORT } = process.env;
+const PORT = NODE_ENV === "production" ? ENV_PORT : 3000;
 
 const app = express();
 

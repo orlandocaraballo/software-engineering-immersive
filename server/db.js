@@ -1,8 +1,11 @@
 import { MongoClient } from "mongodb";
 
+const { NODE_ENV, DB_CONNECTION_STRING: ENV_DB_CONNECTION_STRING } =
+  process.env;
+
 const connectionString =
-  process.env.NODE_ENV === "production"
-    ? process.env.DB_CONNECTION_STRING
+  NODE_ENV === "production"
+    ? ENV_DB_CONNECTION_STRING
     : "mongodb://127.0.0.1:27017/?directConnection=true&serverSelectionTimeoutMS=2000";
 
 export const client = new MongoClient(connectionString, {
