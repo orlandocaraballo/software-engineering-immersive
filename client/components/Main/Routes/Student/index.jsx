@@ -2,6 +2,7 @@ import React from "react";
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { useTitle } from "../../../../context/Title.jsx";
+import Loading from "../../../Utils/Loading.jsx";
 import _ from "lodash";
 import axios from "axios";
 import "./style.scss";
@@ -10,13 +11,15 @@ export default function Student(props) {
   const { id } = props.match.params;
   const { setTitle } = useTitle();
   const [student, setStudent] = useState({});
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     async function loadStudent() {
       try {
         const { data } = await axios.get(`/api/students/${id}`);
-
         setStudent(data);
+        console.log(data);
+        setLoading(false);
       } catch (err) {
         console.error(err);
       }
@@ -28,7 +31,9 @@ export default function Student(props) {
 
   const { name, slackHandle, github, cohort, knownFor, gender } = student;
 
-  return _.isEmpty(student) ? (
+  return loading ? (
+    <Loading />
+  ) : _.isEmpty(student) ? (
     "Student not found"
   ) : (
     <div id="student">

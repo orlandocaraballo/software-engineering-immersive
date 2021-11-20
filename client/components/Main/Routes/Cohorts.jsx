@@ -3,10 +3,12 @@ import { useState, useEffect } from "react";
 import axios from "axios";
 import { Link } from "react-router-dom";
 import { useTitle } from "../../../context/Title.jsx";
+import Loading from "../../Utils/Loading.jsx";
 
 export default function Cohorts() {
   const [cohorts, setCohorts] = useState([]);
   const { setTitle } = useTitle();
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     async function loadCohorts() {
@@ -14,6 +16,7 @@ export default function Cohorts() {
         const { data } = await axios.get("/api/cohorts");
 
         setCohorts(data);
+        setLoading(false);
       } catch (err) {
         console.error(err);
       }
@@ -23,7 +26,9 @@ export default function Cohorts() {
     setTitle("Cohorts");
   }, []);
 
-  return cohorts.length === 0 ? (
+  return loading ? (
+    <Loading />
+  ) : cohorts.length === 0 ? (
     "No cohorts found"
   ) : (
     <ul>
