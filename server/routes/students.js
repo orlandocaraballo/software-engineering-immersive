@@ -1,11 +1,14 @@
 import express from "express";
-import { studentsCollection } from "../db.js";
+import { studentsCollection, client } from "../db.js";
 import { ObjectId } from "mongodb";
 
 const studentsRouter = express.Router();
 
 studentsRouter.get("/", async (req, res, next) => {
-  const studentsCursor = studentsCollection.find();
+  const studentsCursor = client
+    .db("software-engineering-immersive")
+    .collection("students")
+    .find();
 
   try {
     const students = await studentsCursor.toArray();
