@@ -11,6 +11,7 @@
     "start": "node server/index.js",
     "start-frontend-server": "webpack-dev-server --open",
     "start-backend-server": "nodemon server/index.js",
+    "start:dev": "npm run start-frontend-server & npm run start-backend-server",
     "build": "webpack"
   },
   "author": "Orlando Caraballo",

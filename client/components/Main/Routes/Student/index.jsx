@@ -18,7 +18,6 @@ export default function Student(props) {
       try {
         const { data } = await axios.get(`/api/students/${id}`);
         setStudent(data);
-        console.log(data);
         setLoading(false);
       } catch (err) {
         console.error(err);
