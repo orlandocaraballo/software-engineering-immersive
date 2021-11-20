@@ -8,6 +8,7 @@
     "node": "14.x"
   },
   "scripts": {
+    "start": "npm run build && node server/index.js",
     "start-frontend-server": "webpack-dev-server --open",
     "start-backend-server": "nodemon server/index.js",
     "build-watch": "webpack -w",

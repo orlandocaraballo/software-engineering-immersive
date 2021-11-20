@@ -4,7 +4,9 @@ import volleyball from "volleyball";
 import chalk from "chalk";
 import cors from "cors";
 
-const PORT = 3000;
+const PORT = process.env.NODE_ENV === "production" ? process.env.PORT : 3000;
+
+console.log(process.env.NODE_ENV);
 
 const app = express();
 
@@ -13,11 +15,11 @@ app.use(volleyball);
 app.use(cors());
 app.use(express.static(new URL("../public/", import.meta.url).pathname));
 
-app.get("/", (req, res, next) => {
+app.use("/api", indexRouter);
+
+app.get("*", (req, res, next) => {
   res.sendFile(new URL("../public/index.html", import.meta.url).pathname);
 });
-
-app.use("/api", indexRouter);
 
 app.use((error, _req, res, _next) => {
   console.error(chalk.red(error));

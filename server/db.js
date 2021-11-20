@@ -1,9 +1,11 @@
 import { MongoClient } from "mongodb";
 
-const client = new MongoClient(
-  "mongodb://127.0.0.1:27017/?directConnection=true&serverSelectionTimeoutMS=2000",
-  { monitorCommands: true }
-);
+const connectionString =
+  process.env.NODE_ENV === "production"
+    ? process.env.DB_CONNECTION_STRING
+    : "mongodb://127.0.0.1:27017/?directConnection=true&serverSelectionTimeoutMS=2000";
+
+const client = new MongoClient(connectionString, { monitorCommands: true });
 
 // setup our monitoring
 client.on("commandStarted", console.debug);
