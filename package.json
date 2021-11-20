@@ -8,7 +8,7 @@
     "node": "14.x"
   },
   "scripts": {
-    "start": "npm install && npm run build && node server/index.js",
+    "start": "npm run build && node server/index.js",
     "start-frontend-server": "webpack-dev-server --open",
     "start-backend-server": "nodemon server/index.js",
     "build-watch": "webpack -w",
@@ -30,6 +30,7 @@
     "volleyball": "^1.5.1"
   },
   "devDependencies": {
+    "@babel/core": "^7.16.0",
     "@babel/preset-react": "^7.16.0",
     "@babel/register": "^7.16.0",
     "babel-loader": "^8.2.3",
