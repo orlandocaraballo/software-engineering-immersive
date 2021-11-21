@@ -6,7 +6,6 @@ const studentsRouter = express.Router();
 
 studentsRouter.get("/", async (req, res, next) => {
   try {
-    await client.connect();
     const studentsCursor = studentsCollection.find();
     const students = await studentsCursor.toArray();
 
