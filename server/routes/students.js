@@ -5,12 +5,9 @@ import { ObjectId } from "mongodb";
 const studentsRouter = express.Router();
 
 studentsRouter.get("/", async (req, res, next) => {
-  const studentsCursor = client
-    .db("software-engineering-immersive")
-    .collection("students")
-    .find();
-
   try {
+    await client.connect();
+    const studentsCursor = studentsCollection.find();
     const students = await studentsCursor.toArray();
 
     res.json(students);

@@ -23,7 +23,6 @@ try {
   console.error(
     `An error has occured while connecting to the database: ${err}`
   );
-  await client.close();
 }
 
 const db = client.db("software-engineering-immersive");
