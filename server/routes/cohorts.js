@@ -1,5 +1,5 @@
 import express from "express";
-import { studentsCollection } from "../db.js";
+// import { studentsCollection } from "../db.js";
 
 const cohortsRouter = express.Router();
 
