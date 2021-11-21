@@ -1,11 +1,34 @@
 import express from "express";
 import { studentsCollection, client } from "../db.js";
-import { ObjectId } from "mongodb";
+import { ObjectId, MongoClient } from "mongodb";
 
 const studentsRouter = express.Router();
 
 studentsRouter.get("/", async (req, res, next) => {
   try {
+    const { NODE_ENV, DB_CONNECTION_STRING: ENV_DB_CONNECTION_STRING } =
+      process.env;
+
+    const connectionString =
+      NODE_ENV === "production"
+        ? ENV_DB_CONNECTION_STRING
+        : "mongodb://127.0.0.1:27017/?directConnection=true&serverSelectionTimeoutMS=2000";
+
+    const client = new MongoClient(connectionString, {
+      monitorCommands: true,
+    });
+
+    // setup our monitoring
+    client.on("commandStarted", console.debug);
+    client.on("commandSucceeded", console.debug);
+    client.on("commandFailed", console.debug);
+
+    await client.connect();
+
+    const db = client.db("software-engineering-immersive");
+
+    const studentsCollection = db.collection("students");
+
     const studentsCursor = studentsCollection.find();
     const students = await studentsCursor.toArray();
 
