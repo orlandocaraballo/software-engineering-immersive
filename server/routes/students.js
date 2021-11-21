@@ -37,6 +37,8 @@ studentsRouter.get("/", async (req, res, next) => {
     const studentsCursor = studentsCollection.find();
     const students = await studentsCursor.toArray();
 
+    await client.close();
+
     res.json(students);
   } catch (err) {
     next(err);
