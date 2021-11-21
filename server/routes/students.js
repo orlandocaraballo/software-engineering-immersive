@@ -6,13 +6,18 @@ const studentsRouter = express.Router();
 
 studentsRouter.get("/", async (req, res, next) => {
   try {
-    const { NODE_ENV, DB_CONNECTION_STRING: ENV_DB_CONNECTION_STRING } =
-      process.env;
+    const {
+      NODE_ENV,
+      DB_CONNECTION_STRING: ENV_DB_CONNECTION_STRING,
+      PORT,
+    } = process.env;
 
     const connectionString =
       NODE_ENV === "production"
         ? ENV_DB_CONNECTION_STRING
         : "mongodb://127.0.0.1:27017/?directConnection=true&serverSelectionTimeoutMS=2000";
+
+    console.log({ NODE_ENV, connectionString, PORT });
 
     const client = new MongoClient(connectionString, {
       monitorCommands: true,
