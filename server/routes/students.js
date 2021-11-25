@@ -54,16 +54,16 @@ studentsRouter.post("/", async ({ body }, res, next) => {
 
 studentsRouter.put("/:id", async ({ params: { id }, body }, res, next) => {
   try {
-    const { name, gender, knownFor, github, slackHandle } = body;
+    const { name, gender, knownFor, github, slackHandle, cohort } = body;
 
     const dbResponse = await studentsCollection.updateOne(
       { _id: new ObjectId(id) },
-      { $set: { name, gender, knownFor, github, slackHandle } }
+      { $set: { name, gender, knownFor, github, slackHandle, cohort } }
     );
 
     // im assuming this means the student was not in the system
-    if (dbResponse.modifiedCount === 0) {
-      return res.status(404).json({ message: "Student was not updated" });
+    if (dbResponse.matchedCount === 0) {
+      return res.status(404).json({ message: "Student is not in the system" });
     }
 
     res.json({ message: "Student has been updated" });

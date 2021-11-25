@@ -1,4 +1,5 @@
-#student {
+#student,
+#student-edit {
   dl {
     display: flex;
   }
@@ -20,5 +21,6 @@
 
   dd {
     flex: 1;
+    margin-left: 0;
   }
 }
