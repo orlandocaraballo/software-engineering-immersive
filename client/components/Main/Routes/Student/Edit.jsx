@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import { useHistory } from "react-router";
 import { useTitle } from "../../../../context/Title.jsx";
 import axios from "axios";
 import "./style.scss";
