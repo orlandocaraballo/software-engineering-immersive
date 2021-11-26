@@ -5,3 +5,4 @@ npm-debug.log
 .vscode
 /public/bundle.js
 /public/bundle.js.map
+/dump
