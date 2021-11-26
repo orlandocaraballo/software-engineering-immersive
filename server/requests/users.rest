@@ -14,12 +14,12 @@ Content-Type: application/json
 GET http://localhost:3000/api/users/61a126d5ec5982f180c892de
 
 ###
-PUT http://localhost:3000/api/users/61a11cbeba2a96d228ec4b00
+PUT http://localhost:3000/api/users/61a12e2318a1fd91fd1e6970
 Content-Type: application/json
 
 {
-  "username": "orlando2",
-  "password": "some other password"
+  "username": "orlando",
+  "password": "password"
 }
 
 ###

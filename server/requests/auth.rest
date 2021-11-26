@@ -1,4 +1,5 @@
 GET http://localhost:3000/api/auth
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxYTEyNmQ1ZWM1OTgyZjE4MGM4OTJkZSIsImlhdCI6MTYzNzk2MTkxMH0.JWQL5QNJYY22O6kHcCUaQ8hpV8uyqhRdXjwMfeZAm3M
 
 ###
 
@@ -6,6 +7,6 @@ POST http://localhost:3000/api/auth
 Content-Type: application/json
 
 {
-  "username": "orlando",
-  "password": "passwords"
+  "username": "patrisha",
+  "password": "password"
 }

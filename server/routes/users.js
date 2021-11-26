@@ -5,6 +5,10 @@ import bcrypt from "bcrypt";
 
 const usersRouter = express.Router();
 
+function hashPassword(password) {
+  return bcrypt.hash(password, 3);
+}
+
 usersRouter.get("/", async (_req, res, next) => {
   try {
     const usersCursor = usersCollection.find();
@@ -40,7 +44,7 @@ usersRouter.post("/", async ({ body: { username, password } }, res, next) => {
   try {
     await usersCollection.insertOne({
       username,
-      password: await bcrypt.hash(password, 3),
+      password: await hashPassword(password),
     });
 
     res.status(201).json({ message: "User was created" });
