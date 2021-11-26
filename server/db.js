@@ -30,3 +30,4 @@ const db = client.db("software-engineering-immersive");
 export default db;
 
 export const studentsCollection = db.collection("students");
+export const usersCollection = db.collection("users");

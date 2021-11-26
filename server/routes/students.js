@@ -4,13 +4,11 @@ import { ObjectId } from "mongodb";
 
 const studentsRouter = express.Router();
 
-studentsRouter.get("/", async (req, res, next) => {
-  const studentsCursor = studentsCollection.find();
-
+studentsRouter.get("/", async (_req, res, next) => {
   try {
-    const students = await studentsCursor.toArray();
+    const studentsCursor = studentsCollection.find();
 
-    res.json(students);
+    res.json(await studentsCursor.toArray());
   } catch (err) {
     next(err);
   }
