@@ -62,7 +62,6 @@ authRouter.post("/", async ({ body: { username, password } }, res, next) => {
       return res.status(401).json(`Password does not match`);
     }
 
-    // generate access token
     const accessToken = await jwt.sign(
       { id: user._id },
       process.env.JWT_SECRET
