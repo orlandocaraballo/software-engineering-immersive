@@ -1,2 +1,3 @@
-# software-engineering-immersive-frontend
-Frontend for software engineering immersive
+# software-engineering-immersive
+
+Frontend and backend for software engineering immersive app
